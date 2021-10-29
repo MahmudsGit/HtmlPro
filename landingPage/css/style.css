@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+body{
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+.section-top{
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: darkolivegreen;
+}
+
+/*nav section css start*/
+
+nav{
+    position: fixed;
+    background-color: darkolivegreen;
+    width: 100%;
+}
+.header-left{
+    width: 30%;
+    float: left;
+}
+.header-left img{
+    width: 40%;
+    margin: 5px 0px ;
+}
+.header-right{
+    width: 70%;
+    float: left;
+}
+.header-right ul{
+    float: right;
+}
+.header-right ul li{
+    padding: 15px 15px;
+    float: right;
+}
+.header-right ul li a{
+    color: white;
+    font-size: 17px;
+}
+.header-right ul li a:hover{
+    color: antiquewhite;
+}
+/*nav section css end*/
+
+/*banner section css start*/
+#banner{
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-content{
+    padding: 120px 0px;
+    background-color: rgba(91, 118, 16, 0.27);
+}
+.banner-text{
+    color: white;
+}
+.banner-text h1{
+    font-family: "Arial";
+    font-size: 70px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.banner-text h4{
+    font-family: "Arial Narrow";
+    font-size: 30px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+.banner-text a{
+    color: antiquewhite;
+    padding: 12px;
+    background-color: darkolivegreen;
+    border: darkgreen;
+    border-radius: 25px;
+}
+.banner-text a:hover{
+    color: white;
+    background-color: darkseagreen;
+    border-radius: 25px;
+}
+/*banner section css end*/
+
+/*about section css start*/
+#about{
+    background-color: antiquewhite;
+    padding: 50px 0px;
+}
+.about-left{
+    width: 48%;
+    float: left;
+}
+.about-left img{
+    width: 100%;
+}
+.about-right{
+    margin-left: 20px;
+    width: 50%;
+    float: left;
+    text-align: justify;
+}
+.about-right h3{
+    background-color: darkolivegreen;
+    color: antiquewhite;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.about-right h4{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.about-right ul{
+    padding-left: 40px;
+    list-style: circle;
+}
+/*about section css end*/
+
+/*slogan section css start*/
+.slogan{
+    background-image: url("../images/ab1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slogan-content{
+    padding: 60px 0px;
+    background-color: rgba(43, 47, 37, 0.68);
+}
+.slogan-text h2{
+    text-align: center;
+    color: white;
+    font-family: "Arial";
+    font-size: 70px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.slogan-text table{
+    color: darkseagreen;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.slogan-text table tr td{
+    color: antiquewhite;
+}
+
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 00;
+    inherits: false;
+}
+.count {
+    transition: --num 2s;
+    counter-set: num var(--num);
+    font: 800 30px system-ui;
+}
+.count::after {
+    content: counter(num);
+}
+.count:hover {
+    --num: 99;
+}
+
+/*slogan section css end*/
+
+/*portfolio section css start*/
+#portfolio{
+    padding: 50px 0px;
+}
+.portfolio-row {
+    width: 100%;
+    padding: 30px 0px;
+}
+.portfolio-image{
+    float: left;
+    width: 24%;
+    margin-right: 10px;
+    position: relative;
+}
+.portfolio-image img {
+    width: 100%;
+}
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(91, 118, 16, 0.38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.portfolio-overlay a{
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    padding:  10px;
+    color: white;
+    font-size: 18px;
+}
+.portfolio-image:hover .portfolio-overlay{
+    transform: scale(1);
+    transition: all linear .3s;
+}
+/*portfolio section css end*/
+
+/*team section css start*/
+#team{
+    background-color: antiquewhite;
+    padding: 50px 0px;
+}
+.team-image{
+    float: left;
+    width: 24%;
+    margin-right: 10px;
+    position: relative;
+}
+.team-image img {
+    width: 100%;
+    border-radius: 30px;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(91, 118, 16, 0.38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.team-overlay a{
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    padding:  10px;
+    color: white;
+    font-size: 18px;
+}
+.team-image:hover .team-overlay{
+    transform: scale(1);
+    transition: all linear .3s ;
+    border-radius: 30px;
+}
+.tm-detal{
+    font-family: "Arial Narrow";
+    text-align: center;
+    color: darkolivegreen;
+}
+.tm-detal p{
+    font-size: 15px;
+    font-weight: bold;
+}
+/*team section css end*/
+
+/*partner section css start*/
+#partner{
+    padding: 50px 0px;
+}
+.partner-content{
+     padding: 60px 0px;
+     background-color: rgba(43, 47, 37, 0.68);
+ }
+.partner-image{
+    float: left;
+    width: 24%;
+    margin-right: 10px;
+}
+.partner-image img {
+    width: 100%;
+}
+/*partner section css end*/
+
+/*contact section css start*/
+#contact{
+     background-color: antiquewhite;
+     padding: 50px 0px;
+ }
+.contact-left{
+    color: antiquewhite;
+    width: 48%;
+    float: left;
+}
+.contact-left table{
+    width: 100%;
+    padding: 25px;
+}
+.contact-form{
+    width: 100%;
+    background-color: darkolivegreen;
+}
+.contact-right{
+    margin-left: 20px;
+    width: 50%;
+    float: left;
+    text-align: justify;
+    background-color: white;
+    font-family: "Arial Narrow";
+}
+.contact-right h3{
+    background-color: darkolivegreen;
+    color: antiquewhite;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+input[type=text],input[type=email], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+ }
+.send-messege {
+    background-color: antiquewhite;
+    color: darkolivegreen;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.send-messege:hover {
+    background-color: white;
+}
+/*contact section css end*/
+
+/*footer section css start*/
+.footer-content{
+    padding: 60px 0px;
+    background-color: rgba(43, 47, 37, 0.68);
+}
+.footer-sec h3{
+    color: white;
+    padding-bottom: 20px;
+}
+.footer-sec{
+    color: darkseagreen;
+    float: left;
+    width: 32%;
+    margin-right: 10px;
+}
+.footer-inf{
+    padding: 15px;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer-sec ul{
+    padding-left: 40px;
+    list-style: circle;
+}
+.footer-sec p{
+    padding-bottom: 10px;
+    color: antiquewhite;
+}
+.footer-bottom{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+/*footer section css end*/
