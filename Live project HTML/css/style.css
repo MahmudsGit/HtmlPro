@@ -1,0 +1,312 @@
+.{margin:0;padding:0;outline:0}
+body{font-family:verdana;font-size:12px;line-height:15px;color:#666666;}
+.clear{overflow:hidden;}
+.templete{
+  width:1000px;
+  margin:0 auto;
+  border-left: 1px solid #2c2c2d;
+  border-right: 1px solid #2c2c2d;
+}
+a{text-decoration:none;font-weight:bold;color:#000;}
+a:hover{text-decoration:underline;}
+p{margin-bottom:15px;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+.headersection {
+  background: #eaf2f4 none repeat scroll 0 0;
+  border-bottom: 1px solid #666666;
+  border-top: 5px solid #000;
+  height: 60px;
+}
+.headerleft {
+  float: left;
+  width: 500px;
+  font-family: georgia;
+}
+.headerleft h2 {
+  border-right: 3px solid #4D4E49;
+  float: left;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 45px;
+  color:#4d4e49;
+}
+.headerleft p {
+  color: #666666;
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px 5px 5px 10px;
+}
+.headerright {
+  color: #666666;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-family: verdana;
+}
+.headerright input[type="text"] {
+  background: #d5e5e8 none repeat scroll 0 0;
+  border: 1px solid #a1bcc2;
+  font-size: 12px;
+  height: 20px;
+  padding-left: 5px;
+  width: 240px;
+}
+.headerright input[type="submit"] {
+  background: #d5e5e8 none repeat scroll 0 0;
+  border: 1px solid #a1bcc2;
+  font-size: 12px;
+  height: 23px;
+  text-transform: uppercase;
+  width: 40px;
+}
+
+.menusection {
+  background: #eaf2f4 none repeat scroll 0 0;
+  height: 40px;
+  border-bottom: 1px solid #666666;
+}
+.menuleft {
+  float:left;
+  width:740px;
+  font-family: georgia;
+}
+.menuleft ul {margin:0;padding:0;list-style:none;}
+.menuleft ul li {
+  border-right: 1px solid #666666;
+  display: block;
+  float: left;
+  font-size: 16px;
+  margin: 3px 0;
+  padding: 10px 25px;
+}
+.menuleft ul li:last-child {border-right: 0px solid #666666;}
+.menuleft ul li a {
+  display:block;
+  color:#666666;
+}
+.menuleft ul li a:hover{}
+.menuright {
+  float: right;
+  font-family: verdana;
+  margin-top: 5px;
+  width: 260px;
+}
+.menuright p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.bannersection{background:#049BAC;}
+.bannerleft{float:left;width:450px;margin-left:20px;margin-right:20px;}
+.bannerleft h2 {
+  border-bottom: 1px solid #82cdd6;
+  color: #fff;
+  font-family: georgia;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+.bannerleft p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+}
+.bannerlink {
+  font-family: georgia;
+  margin-left: -50px;
+  margin-bottom:40px;
+}
+.banlink {
+  background: #dedede none repeat scroll 0 0;
+  float: left;
+  font-size: 22px;
+  line-height: 20px;
+  margin-left: 50px;
+  padding: 10px 20px;
+}
+.banlink a {
+  color: #333333;
+  font-weight: normal;
+}
+.bannerright {
+  float: right;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  margin-top: 40px;
+  padding-left: 30px;
+  width: 450px;
+}
+.bannerright img {
+  border: 10px solid #eaf2f4;
+  height: 235px;
+  width: 420px;
+}
+
+.serandconsection{
+  background: #eaf2f4 none repeat scroll 0 0;
+  padding:0px 20px;
+}
+.serviccesection {
+  padding: 40px 0px;
+}
+.sameservice {
+  border: 1px solid #cdd8d8;
+  float: left;
+  width: 238px;
+}
+.sameservice h2 {
+  background: #f1f7f7 none repeat scroll 0 0;
+  border-bottom: 1px solid #049bac;
+  color: #049bac;
+  font-family: georgia;
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 0;
+  padding: 20px;
+  text-align:center;
+}
+.sameservice h3 {
+  border-bottom: 1px solid #049bac;
+  color: #979a9b;
+  display: block;
+  font-family: georgia;
+  font-size: 22px;
+  line-height: 25px;
+  margin: 20px 5px 5px;
+}
+.sameservice p {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 5px;
+}
+.sameservice a {
+  float: right;
+  margin: 10px;
+}
+
+.contentsection{border-top: 1px solid #fff;}
+.contentleft {
+  float: left;
+  margin-right: 40px;
+  width: 400px;
+}
+.contentleft h2 {
+  font-family: georgia;
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+.contentleftdesc {
+  border-top: 1px solid #cdd8d8;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.leftimg {
+  float: left;
+  margin-right: 10px;
+  width:90px;
+}
+.leftimg img {
+  border: 1px solid #444;
+  padding: 4px;
+}
+.leftdetail{float:left;width:300px;color: #666666;}
+.leftdetail h4 {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.leftdetail p {
+  line-height: 18px;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+.leftdetail a {
+  float: right;
+  padding: 0 5px;
+}
+.contentright{float:right;width:500px;margin-right:20px}
+.contentright h2 {
+  border-bottom: 1px solid #cdd8d8;
+  font-family: georgia;
+  font-size: 22px;
+  line-height: 23px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.imgstyle {
+  float: left;
+  margin-right: 20px;
+}
+.contentright img {
+  border: 1px solid #000;
+  padding: 5px;
+}
+.contentright h4{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 10px;
+  margin: 0 0 -5px;}
+.contentright p{
+  line-height: 15px;
+  margin-bottom: 10px;}
+
+.footertopsection {
+  background: #2c2c2d none repeat scroll 0 0;
+  border-bottom: 2px solid #3d3d3d;
+  height: 220px;
+}
+.samefooter{float:left;width:305px;margin-left:20px;}
+.samefooter h2 {
+  border-bottom: 1px solid #b5b5b5;
+  color: #b5b5b5;
+  font-family: georgia;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+.samefooter p{color:#98989a;margin-bottom: 10px;}
+.samefooter p a{color:#98989a;font-weight:normal;}
+.samefooter input[type="text"] {
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 220px;
+}
+.samefooter input[type="submit"] {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  padding: 4px;
+  width:40px;
+}
+.samefooter ul{margin:0;padding:0;list-style:none;}
+.samefooter ul li {
+  padding-bottom: 5px;
+}
+.samefooter ul li a {
+  color: #049bac;
+  font-weight: normal;
+}
+
+.footerbottomsection{
+  background:#252526;
+  color: #fff;
+}
+.footleft{float:left;
+  margin-left: 20px;
+}
+.footleft p {
+  line-height: 15px;
+}
+.footright{margin-right:20px;float:right;}
+.footright p{
+  line-height: 15px;
+}
